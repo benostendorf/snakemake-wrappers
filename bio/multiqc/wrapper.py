@@ -17,8 +17,8 @@ output_name = path.basename(snakemake.output[0])
 log = snakemake.log_fmt_shell(stdout=True, stderr=True)
 
 shell(
-    "export LC_ALL=C.UTF-8;"
-    "export LANG=C.UTF-8;"
+    "export LC_ALL=en_US.utf8;"
+    "export LANG=en_US.utf8;"
     "multiqc"
     " {snakemake.params}"
     " --force"
